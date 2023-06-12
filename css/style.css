@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Lato&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 14px;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif; }
+  body h1 {
+    font-family: 'Forum', cursive;
+    font-size: 100px; }
+  body h2 {
+    font-family: 'Forum', cursive;
+    font-size: 35px;
+    font-weight: 500; }
+  body h5 {
+    font-family: 'Forum', cursive;
+    font-size: 25px;
+    font-weight: 600; }
+  body a {
+    text-decoration: none; }
+
+main {
+  padding: 10px;
+  margin: 20px; }
+
+.navbar a {
+  font-size: 20px;
+  color: #D6A561; }
+  .navbar a img {
+    width: 55px; }
+
+.navbar .active {
+  color: #ffffff !important;
+  font-weight: bolder; }
+
+.container-hero .bg-img {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.container-hero .hero-text {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  .container-hero .hero-text img {
+    width: 10%; }
+
+.container-hero h1 {
+  text-align: center;
+  text-align-last: center; }
+
+.container-hero p {
+  text-align: center;
+  text-align-last: center;
+  font-size: 20px; }
+
+.container-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  text-decoration: none; }
+  .container-card .card {
+    background-color: #0B0752;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border: 0;
+    filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
+  .container-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .container-card i {
+    margin: 15px; }
+  .container-card #centerCard {
+    background-color: #D6A561; }
+  .container-card a {
+    text-decoration: none; }
+
+.container-nosotros {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 70px; }
+  .container-nosotros .nosotros-text {
+    width: 70%;
+    margin: 25px auto;
+    text-align: justify;
+    /* background-color: #fff;*/
+    border: 1px solid transparent;
+    background-image: linear-gradient(#D6A561, #D6A561), linear-gradient(#D6A561, #D6A561), linear-gradient(#D6A561, #D6A561), linear-gradient(#D6A561, #D6A561);
+    background-repeat: no-repeat;
+    background-size: 10px 38%, 15% 10px, 10px 38%, 15% 10px, calc(100% - 8px) calc(100% - 8px);
+    padding: 20px;
+    height: auto; }
+
+span {
+  font-weight: bolder; }
+
+.carousel {
+  background: #EEE; }
+  .carousel img {
+    display: block;
+    height: 200px; }
+
+@media screen and (min-width: 768px) {
+  .carousel img {
+    height: 400px; } }
+
+.body-servicios {
+  background-color: #e4d3bb; }
+
+.navbar-servicios {
+  background-color: #161E28; }
+
+.container-servicios {
+  margin: 20px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  max-width: 95%;
+  gap: 30px;
+  justify-content: center;
+  justify-items: center; }
+  .container-servicios .card {
+    padding: 15px;
+    border-radius: 20px;
+    filter: drop-shadow(0.5px 0.5px 2px rgba(100, 100, 100, 0.5)); }
+    .container-servicios .card:hover {
+      background-color: #0B0752;
+      color: #ffffff; }
+  .container-servicios .card-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    text-align-last: center;
+    align-items: center; }
+    .container-servicios .card-body i {
+      padding: 10px; }
+    .container-servicios .card-body h5 {
+      padding: 4px;
+      margin: 5px; }
+    .container-servicios .card-body p {
+      text-align: justify; }
+    .container-servicios .card-body .fa-solid {
+      width: 70px; }
+    .container-servicios .card-body img {
+      width: 70px; }
+      .container-servicios .card-body img:hover {
+        color: white !important; }
+
+footer {
+  width: 100%;
+  background-color: #161E28;
+  color: #D6A561; }
+  footer .container-footer {
+    width: 80%;
+    height: 8vh;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center; }
+  footer .container-author {
+    background-color: #161e2800;
+    padding: 10px 10px;
+    text-align: center; }
+
+.container-footer .box {
+  text-align-last: center;
+  padding: 5px;
+  margin: 5px; }
+  .container-footer .box p {
+    padding: 0;
+    margin: 0; }
+
+.container-footer .box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container-footer .box2 h2 {
+    color: #D6A561;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center; }
+
+.container-footer .social-media a {
+  text-decoration: none;
+  width: 55px;
+  line-height: 55px;
+  text-align: center; }
+
+.container-author small {
+  font-size: 10px; }
