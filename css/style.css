@@ -95,26 +95,26 @@ main {
     filter: drop-shadow(2px 2px 5px rgba(100, 100, 100, 0.5)); }
     .container-card .card:hover {
       background-color: #D6A561;
-      color: white;
+      color: white !important;
       transition: all 0.2s; }
       .container-card .card:hover .card-icon {
-        color: white; }
+        color: white !important; }
   .container-card .card-body {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
     .container-card .card-body .card-icon {
-      color: #D6A561; }
+      color: #D6A561 !important; }
   .container-card i {
     margin: 15px; }
   .container-card #centerCard {
     background-color: #D6A561; }
     .container-card #centerCard .card-body .card-icon {
-      color: white; }
+      color: white !important; }
     .container-card #centerCard:hover {
       background-color: #0B0752; }
       .container-card #centerCard:hover .card-icon {
-        color: #D6A561; }
+        color: #D6A561 !important; }
   .container-card a {
     text-decoration: none; }
 
@@ -318,6 +318,12 @@ footer {
   line-height: 55px;
   text-align: center; }
 
+.container-footer .box2 .social-media .card-icon {
+  color: #D6A561 !important; }
+  .container-footer .box2 .social-media .card-icon:hover {
+    color: white !important;
+    transition: all 0.5s; }
+
 .container-author small {
   font-size: 10px; }
 
@@ -336,7 +342,7 @@ footer {
       padding: 5px;
       margin: 5px 40px; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container-hero .hero-text img {
     width: 100px; }
   .container-hero h1 {
