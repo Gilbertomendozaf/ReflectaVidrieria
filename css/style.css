@@ -6,9 +6,14 @@
   box-sizing: border-box; }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif; }
+  body footer {
+    margin-top: auto; }
   body h1 {
     font-family: 'Forum', cursive;
     font-size: 100px; }
@@ -124,7 +129,7 @@ main {
   flex-direction: column;
   margin-bottom: 70px; }
   .container-nosotros .nosotros-text {
-    width: 70%;
+    width: 100%;
     margin: 25px auto;
     text-align: justify;
     /* background-color: #fff;*/
@@ -146,6 +151,10 @@ span {
 
 .body-servicios {
   background-color: #e4d3bb; }
+  .body-servicios .section-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
 
 .nav-background-servicios {
   background-image: url("../assets/img/img/img-servicios2.png");
@@ -157,11 +166,12 @@ span {
   padding: 10px 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  max-width: 95%;
+  max-width: 100%;
   gap: 30px;
   justify-content: center;
   justify-items: center; }
   .container-servicios .card {
+    width: 22rem;
     padding: 15px;
     border-radius: 20px;
     filter: drop-shadow(0.5px 0.5px 2px rgba(100, 100, 100, 0.5));
@@ -200,6 +210,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 40px;
   color: #D6A561; }
 
 .container-contact {
@@ -342,7 +353,16 @@ footer {
       padding: 5px;
       margin: 5px 40px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 860px) {
+  .container-servicios {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); }
+    .container-servicios .card {
+      width: 18rem;
+      padding: 0; } }
+
+@media screen and (max-width: 768px) {
   .container-hero .hero-text img {
     width: 100px; }
   .container-hero h1 {
@@ -351,6 +371,18 @@ footer {
     font-size: 16px; }
   .container-nosotros .nosotros-text p {
     font-size: 12px; } }
+
+@media screen and (max-width: 450px) {
+  .container-contact {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); } }
+
+@media screen and (max-width: 370px) {
+  .container-contact {
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+    .container-contact .container-form .speaker-form {
+      width: unset;
+      padding: 0;
+      margin: 20px 0; } }
 
 @media screen and (min-width: 768px) {
   .carousel img {
