@@ -5,6 +5,7 @@
 // #e6a651
 // #161E28
 //#D6A561
+//#0B0752
 
 
 
@@ -94,7 +95,7 @@ main{
                 align-items: center;
                 color: white;
                 img{
-                        width: 10%;
+                        width: 180px;
                 }
         } 
         h1{
@@ -124,17 +125,40 @@ main{
                 border-radius: 25px;
                 border: 0;
                 filter: drop-shadow(2px 2px 5px rgba(100, 100, 100,0.5));
+                &:hover{
+                        background-color: #D6A561;
+                        color: white;
+                        transition: all 0.2s;
+                        .card-icon{
+                                color: white;
+                        }
+                }
         } .card-body{
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
+                .card-icon{
+                        color: #D6A561;
+                }
         }
         i{
                 margin: 15px;
         }
         #centerCard{
                 background-color:#D6A561 ;
-        }a{
+                .card-body{
+                        .card-icon{
+                                color: white;
+                        }
+                }
+                &:hover{
+                        background-color: #0B0752;
+                        .card-icon{
+                                color:#D6A561 ;
+                        }
+                }
+        }
+        a{
                 text-decoration: none;
                 
         }
@@ -177,20 +201,19 @@ main{
                 }
         
         
-                @media screen and (min-width: 768px) {
-                        .carousel img {
-                                height: 400px;
-                        }
-                }
+
                 
 // servicios 
 .body-servicios{
         background-color: #e4d3bb;
 }
 
-.navbar-servicios{
-        background-color: #161E28;
+.nav-background-servicios {
+        background-image: url("../assets/img/img/img-servicios2.png");
+        background-size:cover;
+        background-position: center;
 }
+
 
 .container-servicios {
         margin: 20px;
@@ -243,6 +266,146 @@ main{
 
 }
 
+// formulario de contacto
+.nav-background {
+        background-image: url("../assets/img/img/img-contact.png");
+        background-size: cover;
+}
+
+
+.container-contactText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // padding: 20px;
+        // margin: 10px auto 50px auto;
+        color:#D6A561 ;
+}
+
+.container-contact{
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        align-items: center;
+        .container-contactInfo{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: stretch;
+                .box{
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        .item{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                justify-content: flex-start;
+                                align-items: center;
+                                .fa-solid{
+                                        color: #D6A561;
+                                }
+                                h5{
+                                        padding-inline: 5px;
+                                        margin: 10px;
+                                }
+                        }
+                }
+        }
+        .container-form{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                
+        }
+
+}
+
+
+
+.speaker-form {
+        background-color: white;
+        width: 95%;
+        padding: 50px;
+                .legacy-form-row{
+                        padding: 10px 0; 
+                        margin: 10px 0;
+                        color: #D6A561;
+                        select{
+                                background-color: rgb(240, 240, 240);
+                                padding: 10px;
+                                text-align:start;
+                        }
+                }
+                
+
+        
+}
+
+.form-row {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        input {
+
+                &[type="text"],
+                &[type="email"] {
+                        background-color: rgb(240, 240, 240);
+                        border: 1px solid #ffffff;
+                        border-radius: 5px;
+                        width:100%;
+                        padding: 7px;
+                        font-size: 14px;
+                }
+        }
+
+        label {
+                color: #D6A561;
+                margin-bottom: 5px;
+        }
+
+        textarea {
+                font-family: 'Lato', sans-serif;
+                font-size: 14px;
+                border: 1px solid white;
+                border-radius: 5px;
+                min-height: 100px;
+                margin-bottom: 5px;
+                padding: 7px;
+                resize: none;
+        }
+
+        #abstract{
+                background-color: rgb(240, 240, 240) ;
+                border: 1px solid white;
+        }
+
+        .instructions {
+                color: #D6A561;
+                font-size: 14px;
+                margin-bottom: 30px;
+        }
+
+        button {
+                font-size: 16px;
+                font-weight: bold;
+                color: white;
+                background-color: #D6A561;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 40px;
+                cursor: pointer;
+
+                &:hover,
+                &:active {
+                        background-color: #D6A561;
+                }
+        }
+}
 
 
 footer {
@@ -251,8 +414,10 @@ footer {
         color: #D6A561;
 	.container-footer {
 		max-width: 100%;
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
 	}
 	.container-author {
 		text-align: center;
@@ -284,4 +449,67 @@ footer {
 	small {
 		font-size: 10px;
 	}
+}
+
+
+// Media
+@media screen and (max-width:1200px) {  
+        .container-hero{
+                .hero-text{
+                        img{
+                                width: 150px;
+                        }
+                } 
+                h1{
+                        font-size: 70px;
+                }
+                p{
+                        font-size: 16px;
+                }
+        }
+        
+}
+
+@media screen and (max-width: 930px) {
+        footer {
+                .container-footer {
+                        justify-content: center;
+
+                        .box {
+                                padding: 5px;
+                                margin: 5px 40px;
+                        }
+                }
+        }
+}
+
+@media screen and (max-width:768px) {  
+        .container-hero{
+                .hero-text{
+                        img{
+                                width: 100px;
+                        }
+                } 
+                h1{
+                        font-size: 50px;
+                }
+                p{
+                        font-size: 16px;
+                }
+        }
+        .container-nosotros {
+                .nosotros-text{
+                        p{
+                                font-size: 12px;
+                        }
+                }
+        
+        }
+}
+
+@media screen and (min-width: 768px) {
+        .carousel img {
+                height: 400px;
+        }
+        
 }

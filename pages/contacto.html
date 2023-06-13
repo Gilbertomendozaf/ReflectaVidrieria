@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/60607153d5.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="body-servicios">
-    <header class="navbar-servicios">
-        <nav class="navbar navbar-expand-lg navbar light">
+<body>
+    <header class="header-img">
+        <nav class="navbar navbar-expand-lg navbar light nav-background">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img class="img-logo" src="../assets/img/img/logo-grande.png" alt="Logo" /></a>
@@ -32,10 +32,10 @@
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./servicios.html">Servicios</a>
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link active" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -43,27 +43,93 @@
         </nav>
     </header>
     <main>
-        
-    </main>
-    <footer>
-        <div class="container container-footer">
-            <div class="box">
-                <p>
-                    Teléfono: 094 288 436 <br> email:vidrieriareflecta@gmail.com
-                </p>
-            </div>
-            <div class="box box2">
-                <div class="social-media">
-                    <a class="fa-brands fa-facebook fa-2xl" style="color: #D6A561" href=""></a>
-                    <a class="fa-brands fa-whatsapp fa-2xl" style="color: #D6A561" href=""></a>
-                    <a class="fa-brands fa-instagram fa-2xl" style="color: #D6A561" href=""></a>
+        <section class="container-contactText">
+            <h2>¿Tienes alguna consulta?</h2>
+            <p>Si tienes alguna pregunta, consulta o deseas solicitar un presupuesto, por favor completa el siguiente formulario de contacto. Estamos para ayudarte y te responderemos lo antes posible.</p>
+        </section>
+        <section class="container-contact">
+            <div class="container-contactInfo">
+                <div class="box">
+                    <div class="item">
+                        <i class="fa-solid fa-envelope fa-2xl"></i> 
+                        <h5><b></b> E-mail</h5>
+                    </div>
+                    <p>vidrieriareflecta@gmail.com</p>
+                </div>
+                <div class="box">
+                    <div class="item">
+                        <i class="fa-solid fa-phone fa-2xl"></i> 
+                        <h5><b></b> Teléfono</h5>
+                    </div>
+                    <p>094-288-436.</p>
+                </div>
+                <div class="box">
+                    <div class="item">
+                        <i class="fa-solid fa-clock fa-2xl"></i>
+                        <h5><b></b> Horarios</h5>
+                    </div>
+                    <p>Lunes a Viernes de 9:00 a 18:00hs.</p>
                 </div>
             </div>
-            <div class="container-author box box1">
-                <small>&copy; 2023 <b>Reflecta Vidrieria</b> - Todos los Derechos Reservados<small>
-            </div>
+        <div class="container-form">
+            <form action="form.php" method="POST" class="speaker-form">
+                <div class="form-row">
+                    <label for="full-name"></label>
+                    <input id="full-name" name="full-name" type="text" placeholder="Nombre y apellido">
+                </div>
+                
+                <div class="form-row">
+                    <label for="email"></label>
+                    <input id="email" name="email" type="text" placeholder="Correo electrónico">
+                </div>
+                
+                <fieldset class="legacy-form-row">
+                    <label for="subject"></label>
+                    <select placeholder="Subject line" name="subject" id="subject_input" required>
+                        <option disabled hidden selected>Seleccionar servicio...</option>
+                        <option>Puertas y mamparas</option>
+                        <option>Barandas</option>
+                        <option>Cerramientos</option>
+                        <option>Claraboyas</option>
+                        <option>Espejos</option>
+                        <option>Cristalería Comercial</option>
+                        <option>Artículos para vidrieros</option>
+                    </select>
+                </fieldset>
+                
+                <div class="form-row">
+                    <label class="abstract" for="abstract"></label>
+                    <textarea id="abstract" name="abstract" placeholder="Descripción"></textarea>
+                    <div class="instructions"></div>
+                </div>
+                
+                <div class="form-row">
+                    <button>Enviar</button>
+                </div>
+            </form>
         </div>
-    </footer>
+    </section>
+        </main>
+        <footer>
+            <div class="container container-footer">
+                <div class="box">
+                    <p>
+                        Teléfono: 094 288 436 <br> email:vidrieriareflecta@gmail.com
+                    </p>
+                </div>
+                <div class="container-author box box1">
+                    <small>&copy; 2023 <b>Reflecta Vidrieria</b> - Todos los Derechos Reservados</small>
+                </div>
+                <div class="box box2">
+                    <div class="social-media">
+                        <a class="fa-brands fa-facebook fa-2xl" style="color: #D6A561" href=""></a>
+                        <a class="fa-brands fa-whatsapp fa-2xl" style="color: #D6A561" href=""></a>
+                        <a class="fa-brands fa-instagram fa-2xl" style="color: #D6A561" href=""></a>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
