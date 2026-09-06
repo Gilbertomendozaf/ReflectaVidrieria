@@ -1,0 +1,16 @@
+{
+  "name": "reflectavidrieria",
+  "version": "1.0.0",
+  "description": "Sitio web de Reflecta Vidrieria",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/style.scss css/style.css",
+    "watch-css": "sass --watch scss/style.scss:css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}
