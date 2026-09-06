@@ -1,66 +1,66 @@
-# Reflecta Vidriería — Sitio Web
+# Reflecta Vidriería — Website
 
-Sitio web institucional para Reflecta Vidriería, un negocio real de vidriería y cristalería en Uruguay. Desarrollado con HTML, SCSS y Bootstrap.
+Institutional website for Reflecta Vidriería, a real glass and glazing business in Uruguay. Built with HTML, SCSS and Bootstrap.
 
-> **Nota:** el negocio dejó de operar este sitio (el cliente no renovó el hosting), por lo que este repositorio queda como muestra de portfolio del trabajo realizado. El formulario de contacto está intencionalmente deshabilitado en esta versión — simula el flujo de envío pero no manda datos a ningún servidor, para no generar contactos accidentales hacia el negocio real.
+> **Note:** the business no longer operates this website (the client discontinued hosting), so this repository stands as a portfolio showcase of the work done. The contact form is intentionally disabled in this version — it simulates the submission flow but does not send data to any server, to avoid accidentally contacting the real business.
 
-## Características
+## Features
 
-- Diseño responsive con Bootstrap 5
-- Carrusel de imágenes de trabajos realizados (Flickity)
-- Páginas de Inicio, Servicios y Contacto
-- Estilos escritos en SCSS, compilados a CSS
-- Optimización de imágenes para carga rápida
+- Responsive design with Bootstrap 5
+- Image carousel of completed projects (Flickity)
+- Home, Services and Contact pages
+- Styles written in SCSS, compiled to CSS
+- Optimized images for fast loading
 
 ## Tech Stack
 
 - HTML5
 - SCSS (Dart Sass)
 - Bootstrap 5
-- Flickity (carrusel)
-- Font Awesome (iconografía)
+- Flickity (carousel)
+- Font Awesome (icons)
 
-## Estructura del proyecto
+## Project Structure
 
 ```
-├── assets/           # Imágenes del sitio
-├── css/              # CSS compilado (no editar directamente)
-├── scss/             # Código fuente de estilos (acá se edita)
-├── js/               # Scripts del sitio
-├── pages/            # Páginas internas (servicios, contacto, éxito)
-├── index.html         # Página de inicio
+├── assets/           # Site images
+├── css/              # Compiled CSS (do not edit directly)
+├── scss/             # Source styles (edit here)
+├── js/               # Site scripts
+├── pages/            # Internal pages (services, contact, success)
+├── index.html         # Home page
 └── package.json
 ```
 
-## Desarrollo local
+## Local Development
 
-1. Clonar el repositorio e instalar dependencias:
+1. Clone the repository and install dependencies:
    ```bash
    npm install
    ```
 
-2. Para compilar los estilos una vez:
+2. Compile styles once:
    ```bash
    npm run build-css
    ```
 
-3. Para recompilar automáticamente mientras editás el SCSS:
+3. Automatically recompile while editing SCSS:
    ```bash
    npm run watch-css
    ```
 
-4. Abrir `index.html` directamente en el navegador — no requiere servidor.
+4. Open `index.html` directly in the browser — no server required.
 
-**Importante:** los estilos se editan siempre en `scss/style.scss`, nunca directamente en `css/style.css` — ese archivo se genera automáticamente al correr `build-css` y cualquier cambio manual ahí se pierde en la próxima compilación.
+**Important:** styles are always edited in `scss/style.scss`, never directly in `css/style.css` — that file is generated automatically by `build-css`, and any manual edits there are lost on the next compile.
 
-## Formulario de contacto
+## Contact Form
 
-En la versión original en producción, el formulario usaba [formsubmit.co](https://formsubmit.co/) para enviar los mensajes por email sin necesidad de backend propio. En esta versión de portfolio, el envío está simulado con JavaScript (no manda datos a ningún servidor) para evitar contactos accidentales hacia el negocio real, que ya no está operativo.
+In the original production version, the form used [formsubmit.co](https://formsubmit.co/) to send messages by email without a custom backend. In this portfolio version, submission is simulated with JavaScript (no data is sent to any server) to avoid accidental contact with the real business, which is no longer operating.
 
-Si se quisiera reactivar el formulario para un uso real, bastaría con:
-1. Crear una cuenta en formsubmit.co (o similar) con el email de destino deseado.
-2. Reemplazar el `<script>` de simulación en `pages/contacto.html` por un `action` de formulario apuntando al endpoint correspondiente.
+To reactivate the form for real use, it would be enough to:
+1. Create an account on formsubmit.co (or similar) with the desired destination email.
+2. Replace the simulation `<script>` in `pages/contacto.html` with a form `action` pointing to the corresponding endpoint.
 
-## Licencia
+## License
 
 ISC
